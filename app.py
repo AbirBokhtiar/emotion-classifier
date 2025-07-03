@@ -154,4 +154,4 @@ gr_interface = gr.Interface(
 # app = gr.mount_gradio_app(app, gr_interface, path="/gradio")
 
 # Mount Gradio app at root path
-app = gr.mount_gradio_app(app, gr_interface, path="/")
+app = gr.mount_gradio_app(app, gr_interface, path="/gradio")
