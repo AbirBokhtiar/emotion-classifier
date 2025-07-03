@@ -4,6 +4,7 @@ import gradio as gr
 import pickle
 import pandas as pd
 from pydantic import BaseModel
+from fastapi.responses import RedirectResponse
 
 # Load trained model
 with open("model.pkl", "rb") as f:
@@ -151,7 +152,8 @@ gr_interface = gr.Interface(
 )
 
 @app.get("/")
-def home():
-    return {"message": "Visit /gradio for the Gradio UI"}
-# Mount Gradio app at /gradio path
+def redirect_to_gradio():
+    return RedirectResponse(url="/gradio")
+
+# Mount Gradio at /gradio
 app = gr.mount_gradio_app(app, gr_interface, path="/gradio")
