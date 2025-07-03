@@ -4,6 +4,9 @@ This project is a web-based application that predicts the **dominant emotion** e
 
 ---
 
+🌐 **Live App:** [https://sentientml-classifier.onrender.com/gradio/](https://sentientml-classifier.onrender.com/gradio/)
+
+
 ## Features
 
 - **Predicts dominant emotion** (e.g., Anxiety, Happiness, etc.) from social media usage.
