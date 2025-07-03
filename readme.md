@@ -50,7 +50,7 @@ Ensure the following files are in the project directory:
 uvicorn app:app --reload
 ```
 
-- The Gradio UI will be available at: [http://127.0.0.1:8000/gradio](http://127.0.0.1:8000/gradio)
+- The Gradio UI will be available at: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 - The API endpoint is at: [http://127.0.0.1:8000/predict](http://127.0.0.1:8000/predict)
 
 ---
